@@ -1,12 +1,30 @@
 import React from "react";
-import words from "../constants";
+import {words} from "../constants/index";
 import Button from "../components/Button";
 import HeroExperiences from "../components/HeroModels/HeroExperiences";
-
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import AnimatedCounter from "../components/AnimatedCounter";
 const Hero = () => {
+  useGSAP(() => {
+    gsap.fromTo(
+      ".her-text h1",
+      {
+        y: 50,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        stagger: 0.2,
+        duration: 1,
+        ease: "power2.inOut",
+      }
+    );
+  });
   return (
     <section id="hero" className="relative overflow-hidden bg-black text-white">
-     <div className="absolute top-0 left-0 w-[70%] h-[80%] bg-gradient-to-br from-[#ff00ff]/60 via-[#a600ff]/40 to-transparent blur-[160px] opacity-70 z-0" />
+      <div className="absolute top-0 left-0 w-[70%] h-[80%] bg-gradient-to-br from-[#ff00ff]/60 via-[#a600ff]/40 to-transparent blur-[160px] opacity-70 z-0" />
 
       <div className="hero-layout relative z-10 flex flex-col md:flex-row items-center justify-between w-full md:h-screen px-6 md:px-20 gap-10">
         <header className="flex flex-col justify-center md:w-1/2 w-full gap-7">
@@ -54,6 +72,7 @@ const Hero = () => {
           </div>
         </figure>
       </div>
+      <AnimatedCounter/>
     </section>
   );
 };

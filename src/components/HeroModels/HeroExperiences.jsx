@@ -4,8 +4,7 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 
 import HeroLights from "./HeroLights";
-import { Hacker } from "./Hacker";
-import { HackerRoom } from "./Hacker_room";
+import { Computer } from "./Computer";
 
 const HeroExperiences = () => {
   const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
@@ -19,7 +18,6 @@ const HeroExperiences = () => {
         near: 0.1,
         far: 2000,
       }}
-    
     >
       <HeroLights />
 
@@ -37,7 +35,7 @@ const HeroExperiences = () => {
         position={[0, -10, 0]}
         rotation={[0, Math.PI / 4, 0]}
       >
-        <HackerRoom />
+        <Computer />
       </group>
     </Canvas>
   );
