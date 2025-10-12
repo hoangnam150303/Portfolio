@@ -1,29 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-
-const projects = [
-  {
-    img: "/images/project1.png",
-    title: "B4B Platform",
-    desc: "An online platform that allows users to buy and sell books seamlessly — connecting book lovers within a vibrant community.",
-  },
-  {
-    img: "/images/project2.png",
-    title: "ETutor",
-    desc: "A personalized online learning platform where students can connect with private tutors for 1-on-1 sessions.",
-  },
-  {
-    img: "/images/project3.jpg",
-    title: "YSoul Website",
-    desc: "An entertainment platform website that provides users with access to a wide range of movies, music, and social media.",
-  },
-  {
-    img: "/images/project4.jpg",
-    title: "YSoul Mobile",
-    desc: "An entertainment platform website that provides users with access to a wide range of movies, music.",
-  },
-];
+import { projects } from "../constants";
 
 const ShowCase = () => {
   return (

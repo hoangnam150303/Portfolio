@@ -1,37 +1,14 @@
 import React from "react";
 import TitleHeader from "../components/TitleHeader";
 import GlowCard from "../components/GlowCard";
-
-const experiences = [
-  {
-    company: "Greenwich Vietnam",
-    position: "Teaching Assistant (TA)",
-    duration: "Feb 2024 – Jul 2024",
-    description:
-      "Hỗ trợ giảng viên trong việc hướng dẫn sinh viên môn Internet of Things và Data Structures. Giải đáp thắc mắc, chấm điểm và hướng dẫn thực hành.",
-    img: "/images/greenwich-ta.png",
-  },
-  {
-    company: "AI Startup Lab",
-    position: "Frontend Developer Intern",
-    duration: "Aug 2024 – Oct 2024",
-    description:
-      "Phát triển giao diện React.js và tích hợp API cho hệ thống AI Chatbot. Làm việc với đội ngũ thiết kế để cải thiện UX/UI và hiệu năng.",
-    img: "/images/ai-lab.png",
-  },
-  {
-    company: "Freelance",
-    position: "Fullstack Developer",
-    duration: "2023 – Present",
-    description:
-      "Phát triển nhiều dự án web cá nhân sử dụng React, Node.js và PostgreSQL. Thiết kế trải nghiệm người dùng hiện đại và tối ưu hiệu suất frontend.",
-    img: "/images/freelance.png",
-  },
-];
+import { experiences } from "../constants";
 
 const Experience = () => {
   return (
-    <div id="experience" className="w-full md:mt-40 mt-20 section-padding xl:px-0">
+    <div
+      id="experience"
+      className="w-full md:mt-20 mt-20 section-padding xl:px-0"
+    >
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader title="Professional Experience" />
 

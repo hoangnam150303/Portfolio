@@ -262,7 +262,7 @@ section {
   }
 
   .cta-button:hover .text {
-    @apply text-white; /* chữ đổi trắng khi hover */
+    @apply text-white; 
   }
 
   .card-border {
