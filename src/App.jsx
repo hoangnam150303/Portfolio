@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Hero from "./sections/hero";
+import Hero from "./sections/Hero";
 import ShowCase from "./sections/ShowCase";
 import NavBar from "./components/NavBar";
 
