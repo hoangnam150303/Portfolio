@@ -14,14 +14,14 @@ const projects = [
     desc: "A personalized online learning platform where students can connect with private tutors for 1-on-1 sessions.",
   },
   {
-    img: "/images/project3.png",
-    title: "Portfolio Website",
-    desc: "Personal portfolio built with React and Three.js",
+    img: "/images/project3.jpg",
+    title: "YSoul Website",
+    desc: "An entertainment platform website that provides users with access to a wide range of movies, music, and social media.",
   },
   {
-    img: "/images/project4.png",
-    title: "AI Chatbot",
-    desc: "ChatGPT-style web chatbot built with Python and FastAPI",
+    img: "/images/project4.jpg",
+    title: "YSoul Mobile",
+    desc: "An entertainment platform website that provides users with access to a wide range of movies, music.",
   },
 ];
 
